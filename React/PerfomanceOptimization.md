@@ -5,18 +5,20 @@
 ### Link
 
 **(main)** https://darrengwon.tistory.com/608?category=858368
+
 (sub) https://ui.toast.com/weekly-pick/ko_20190731/#:~:text=React.memo()%20%EC%9D%80%20%EC%84%B1%EB%8A%A5,%EC%A0%9C%EC%9D%B4%EC%85%98%EC%97%90%20%EC%9D%98%EC%A1%B4%ED%95%98%EB%A9%B4%20%EC%95%88%EB%90%9C%EB%8B%A4.
+
 (sub) https://velog.io/@yejinh/useCallback과-React.Memo을-통한-렌더링-최적화
 
 ### Summary
 
 - 리스트를 렌더링 할 때는
 
-1. React.memo 를 통해 리스트 아이템과 리스트를 감싸줘서 props 가 동일하면 리렌더링이 되는 것을 방지하고,
-2. 인라인 함수들(대개 onClick, onSubmit 등)을 useCallback 으로 감싸줘야 하며(함수가 새로 계속 생성되기 때문에 자식 쪽에서 리렌더링 발생함)
-3. setState 를 이용하여 새로운 state 를 반영할 시 그 업데이트는 함수형 업데이트로 이뤄져야 한다.
+1. **React.memo** 를 통해 리스트 아이템과 리스트를 감싸줘서 props 가 동일하면 리렌더링이 되는 것을 방지하고,
+2. 인라인 함수들(대개 onClick, onSubmit 등)을 **useCallback** 으로 감싸줘야 하며(함수가 새로 계속 생성되기 때문에 자식 쪽에서 리렌더링 발생함)
+3. setState 를 이용하여 새로운 state 를 반영할 시 그 업데이트는 **함수형 업데이트**로 이뤄져야 한다.
 
-- 퍼포먼스 측정을 위해서는 profiling 을 사용하면 된다(in Chrome)
+- 퍼포먼스 측정을 위해서는 **profiling** 을 사용하면 된다(in Chrome)
 
 ---
 
