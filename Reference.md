@@ -23,3 +23,5 @@ https://opentutorials.org/module/3648/21839
 https://velog.io/@surim014/HTTP%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
 
 https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+https://velog.io/@codemcd/HTTP-%EB%A9%94%EC%8B%9C%EC%A7%80-lqk14ernft
