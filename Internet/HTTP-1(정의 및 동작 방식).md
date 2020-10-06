@@ -74,11 +74,11 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
 
 ## HTTP Message 형식
 
-![Alt text](/picture/http2.png)
+![Alt text](https://gmlwjd9405.github.io/images/network/http-example.png)
 
 ### HTTP 요청 메시지 형식
 
-![Alt text](/picture/http1.png)
+![Alt text](https://gmlwjd9405.github.io/images/network/http-request.png)
 
 - Start Line : HTTP Request 의 첫 라인으로써, 3 부분으로 구성됩니다.
 
@@ -101,7 +101,7 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
 
 ### HTTP 응답 메시지 형식
 
-![Alt text](/picture/http3.png)
+![Alt text](https://gmlwjd9405.github.io/images/network/http-response.png)
 
 - Start Line : HTTP Response 의 첫 라인으로써, 3 부분으로 구성됩니다.
 
