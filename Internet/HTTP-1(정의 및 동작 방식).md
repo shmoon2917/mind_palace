@@ -2,6 +2,9 @@
 
 **인터넷에서 서버와 클라이언트 간의 데이터를 주고 받기 위한 프로토콜(상호 간에 정의한 규약)** 입니다.
 
+<br></br>
+<br></br>
+
 ## HTTP 프로토콜 특징
 
 **비연결 지향(Connectionless)적이고 무상태(stateless)적인 프로토콜**입니다. 비연결적이고 상태가 없다라는 말은 각각의 데이터 요청이 서로 독립적으로 이루어진다는 말입니다. 즉, 모든 트랜젝션이 단 한 번의 응답과 요청 사이클을 가지며, 이 사이클이 끝나면 연결이 끊깁니다.
@@ -10,7 +13,8 @@
 
 또한 HTTP 프로토콜은 일반적으로 [TCP/IP 통신](https://brunch.co.kr/@wangho/6) 위에서 동작하며, **80번** 포트를 사용합니다.
 
----
+<br></br>
+<br></br>
 
 ## HTTP Request & HTTP Response
 
@@ -22,13 +26,16 @@ HTTP 프로토콜로 데이터를 주고받기 위해서는 아래와 같이 클
 
 HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain Text 부터 JSON 데이터 및 이미지, 영상 등 어떤 데이터 형태도 전송할 수 있게끔 설계되어있습니다
 
----
+<br></br>
+<br></br>
 
 ## URL
 
 숫자로 된 IP 주소를 대체하는 **도메인 네임 시스템**입니다. URL(또는 URI) 이라는 단어 자체는 네트워크 상에서 특정 자원에 대한 주소를 나타내기 위한 정식적인 규약 명칭입니다.
 
 ![Alt text](https://joshua1988.github.io/images/posts/web/http/url-structure.png)
+
+<br></br>
 
 ### **TIP.** URL 과 URI 의 차이
 
@@ -54,6 +61,8 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
   - 자원에 접근할 수 있는 위치는 https://gmlwjd9405.github.io/list이며, 이를 **URL**이라고 할 수 있습니다.
     하지만 원하는 자원을 얻기 위해서는 추가적인 식별자인 `page=2`가 필요하고 이를 포함한 내용까지가 **URI**라고 할 수 있습니다.
 
+<br></br>
+
 ### URL 구조
 
 위 URL 구조를 구분지어 살펴보겠습니다.
@@ -70,11 +79,14 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
 
 도메인 주소의 오른쪽에 있는 TLD 부터 점을 구분하여 나열되는 각 문자들을 **서브 도메인**이라 합니다. naver.com 에서 naver 가 서브 도메인이 되는데, 일반적으로 우리가 도메인을 구입하면 example.com 형식으로 할당받기 때문에 example 이나 naver 처럼 TLD 바로 옆에 있는 도메인은 주로 **메인 도메인**이라고 부릅니다. 메인 도메인 왼쪽부터 서브 도메인이라 칭하는 것이 일반적입니다.
 
----
+<br></br>
+<br></br>
 
 ## HTTP Message 형식
 
 ![Alt text](https://gmlwjd9405.github.io/images/network/http-example.png)
+
+<br></br>
 
 ### HTTP 요청 메시지 형식
 
@@ -99,6 +111,8 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
 
 - Body : 해당 Request 의 실제 내용이 들어가있으며, `POST` 또는 `PUT` 메서드의 경우에만 존재합니다.
 
+<br></br>
+
 ### HTTP 응답 메시지 형식
 
 ![Alt text](https://gmlwjd9405.github.io/images/network/http-response.png)
@@ -115,7 +129,8 @@ HTML 문서만이 HTTP 통신을 위한 유일한 정보는 아닙니다. Plain 
 
 - Body : 실제 응답 리소스 데이터입니다. 상태에 따라 body 가 존재하지 않을 수 있습니다.
 
----
+<br></br>
+<br></br>
 
 ## HTTP Request Method
 
@@ -132,7 +147,7 @@ URL(Uniform Resource Locators) 주소를 이용하면 서버에 특정 데이터
 - **OPTIONS** : 웹 서버가 지원하는 메서드의 종류를 요청
 - **TRACE** : 클라이언트의 요청을 그대로 반환하는 메서드.
 
----
+<br></br><br></br>
 
 ## HTTP Status Code
 
@@ -174,7 +189,7 @@ URL 과 요청 메서드가 클라이언트에서 설정해야 할 정보라면 
 - 501 : Not Implemented, 요청한 동작에 대해 서버가 수행할 수 없는 경우
 - 503 : Service Unavailable, 서버가 과부하 또는 유지 보수로 내려간 경우
 
----
+<br></br><br></br>
 
 ## 다시 살펴보는 HTTP 요청과 응답
 
