@@ -17,3 +17,9 @@
 5. 컨테이너와 프레젠터 패턴에 대해서 이해하기
 
 ---
+
+## Component의 역할 분리(Container / Presenter)
+
+### Link
+
+**(link)** https://jeonghwan-kim.github.io/dev/2020/01/28/component-design.html#%EB%B2%84%ED%8A%BC-%EC%98%88%EC%A0%9C
